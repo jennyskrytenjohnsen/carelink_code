@@ -23,3 +23,13 @@ REMEMBER TO CHANGE YOU PASSWORD FOR THE DATABASE CONNECTION
 
 Is can be run when new instances is created in table refugee_relations
 
+
+FOR the API task: 
+
+- Remember to insert password to local database & turn on MYSQL connection on computer (in appsettings.json)
+- Open the .cs files. 
+- In the Terminal go to the carelink_api file
+- write dotnet run
+- Insert the http://localhost:5077/swagger/index.html as a webadress (maybe your computer uses another localhost adress, be observant)
+- Try the APIs :D
+

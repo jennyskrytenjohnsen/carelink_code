@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\carelink_api.props" />
+</Project>

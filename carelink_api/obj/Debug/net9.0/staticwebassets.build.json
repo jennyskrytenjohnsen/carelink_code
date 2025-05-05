@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "8i4kBHeZLJjVGOg/B6tqswM15yCQ4DXvqeZePlcBiKs=",
+  "Source": "carelink_api",
+  "BasePath": "_content/carelink_api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
