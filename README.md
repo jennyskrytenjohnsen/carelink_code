@@ -33,11 +33,11 @@ find_family_id.py
 ## API task: 
 
 ### Download: 
-dotnet add package Microsoft.EntityFrameworkCore
-dotnet add package Pomelo.EntityFrameworkCore.MySql
-dotnet add package Microsoft.EntityFrameworkCore.Tools
-dotnet add package Swashbuckle.AspNetCore
-dotnet add package Microsoft.AspNetCore.OpenApi
+- dotnet add package Microsoft.EntityFrameworkCore
+- dotnet add package Pomelo.EntityFrameworkCore.MySql
+- dotnet add package Microsoft.EntityFrameworkCore.Tools
+- dotnet add package Swashbuckle.AspNetCore
+- dotnet add package Microsoft.AspNetCore.OpenApi
 
 ### How to run
 1. Remember to insert the password to your local database in appsettings.json and turn on the MySQL connection on your computer.
