@@ -35,7 +35,7 @@ dotnet add package Microsoft.AspNetCore.OpenApi
 
 
 
-- Remember to insert password to local database & turn on MYSQL connection on computer (in appsettings.json)
+- Remember to insert password to local database (in appsettings.json) & turn on MYSQL connection on computer 
 - Open the .cs files. 
 - In the Terminal go to the carelink_api file
 - write dotnet run
