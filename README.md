@@ -26,6 +26,15 @@ Is can be run when new instances is created in table refugee_relations
 
 FOR the API task: 
 
+Download: 
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Pomelo.EntityFrameworkCore.MySql
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet add package Swashbuckle.AspNetCore
+dotnet add package Microsoft.AspNetCore.OpenApi
+
+
+
 - Remember to insert password to local database & turn on MYSQL connection on computer (in appsettings.json)
 - Open the .cs files. 
 - In the Terminal go to the carelink_api file
