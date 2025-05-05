@@ -1,44 +1,53 @@
 # carelink_code
 
-For the database task:
+## Database Task
 
-registrate_refugees.sql contains the creation of all the tables in the database registrate_refugees.
+### registrate_refugees.sql
+- Contains the creation of all tables in the registrate_refugees database.
 
-The table refugee contains all information about the refugees.
+- The refugee table contains all information about the refugees.
 
-The table refugee_relations contains all information about relations between the refugees. Each relation must be instantiated in this table using two asylum_card_IDs and a relation type, for example: asylum_card_ID1, asylum_card_ID2, 'Brother'.
+- The refugee_relations table contains all information about relations between the refugees. 
+  Each relation must be instantiated in this table using two asylum_card_IDs and a relation type, for example:
+  asylum_card_ID1, asylum_card_ID2, 'Brother'.
 
-The table place_of_residence stores the addresses where the refugees live.
+- The place_of_residence table stores the addresses where the refugees live.
 
-The table refugee_family is updated automatically using the find_family_id.py script.
+- The refugee_family table is updated automatically using the find_family_id.py script.
 
-insert_instances.sql creates the data entries (instances) for the different database tables.
+### insert_instances.sql
+Creates the data entries (instances) for the different database tables.
 
+### How to run find_family_id.py:
 
-How to run find_family_id.py:
+1. Install:
+pip install mysql-connector-python networkx
 
-Install: pip install mysql-connector-python networkx
-Run: find_family_id.py.
-REMEMBER TO CHANGE YOU PASSWORD FOR THE DATABASE CONNECTION
+2. Run:
+find_family_id.py
 
-Is can be run when new instances is created in table refugee_relations
+- Remember to change your password for the database connection
 
+- find_family.py can be run when new instances are created in the refugee_relations table.
 
-FOR the API task: 
+## API task: 
 
-Download: 
+### Download: 
 dotnet add package Microsoft.EntityFrameworkCore
 dotnet add package Pomelo.EntityFrameworkCore.MySql
 dotnet add package Microsoft.EntityFrameworkCore.Tools
 dotnet add package Swashbuckle.AspNetCore
 dotnet add package Microsoft.AspNetCore.OpenApi
 
+### How to run
+1. Remember to insert the password to your local database in appsettings.json and turn on the MySQL connection on your computer.
 
+2. Open the .cs files.
 
-- Remember to insert password to local database (in appsettings.json) & turn on MYSQL connection on computer 
-- Open the .cs files. 
-- In the Terminal go to the carelink_api file
-- write dotnet run
-- Insert the http://localhost:5077/swagger/index.html as a webadress (maybe your computer uses another localhost adress, be observant)
-- Try the APIs :D
+3. In the Terminal, go to the carelink_api folder.
 
+4. Write: dotnet run in the terminal
+
+5. Insert http://localhost:5077/swagger/index.html as a web address (note: your computer might use another localhost address – be observant).
+
+6. Try the APIs :D
